@@ -10,6 +10,8 @@ const server = app.listen(port, function() {
 
 const io = require('socket.io')(server);
 
+io.origins(['https://jimmyandersson.me:443']);
+
 io.on('connection', function(socket) {
     console.log(socket.id);
     socket.broadcast.emit('user-connected', { message: '' });
