@@ -1,5 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = process.env.DBURL || 'mongodb://localhost:27017';
+// const url = process.env.DBURL || 'mongodb://localhost:27017';
+const url = process.env.DBURL || 'mongodb://127.0.0.1:27017';
 
 var _db;
 
